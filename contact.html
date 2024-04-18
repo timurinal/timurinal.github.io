@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-UK">
 <head>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="contact.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles/contact.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
-  <script type="text/javascript" src="contact.js"></script>
+  <script type="text/javascript" src="scripts/contact.js"></script>
   <title>Contact</title>
 
 </head>
@@ -13,13 +13,17 @@
   <div class="navbar">
     <ul>
       <li><a class="left" href="index.html">Home</a>
-      <li><a class="left" href="projects.html">Projects</a>
       <li><a class="left" href="about.html">About</a>
+      <li><a class="left" href="projects.html">Projects</a>
+      <li><a class="left" href="blog.html">Blog</a>
       <li><a class="right active">Contact</a>
     </ul>
   </div>
 
   <div style="padding:16px"><br><br><br></div>
+
+  <h1>Contact</h1>
+  <h3>Send me a message!<br>I'll try and respond as soon as possible</h3><br>
 
   <form action="https://formspree.io/f/xrgnreav" method="post" class="contact-centre">
     <ul>
@@ -33,7 +37,7 @@
       </li>
       <li>
         <label for="msg">Message:</label>
-        <textarea id="msg" name="user_message"></textarea>
+        <textarea id="msg" name="user_message" style="resize: none;"></textarea>
       </li>
       <li>
         <button type="submit">Submit</button>

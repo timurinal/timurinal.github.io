@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/blog.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a class="left" href="index.html">Home</a>
+            <li><a class="left" href="about.html">About</a>
+            <li><a class="left" href="projects.html">Projects</a>
+            <li><a class="left active">Blog</a>
+            <li><a class="right" href="contact.html">Contact</a>
+        </ul>
+    </div>
+    <div style="padding:16px"></div><br><br>
+
+    <h1 style="text-align: center;">Blog</h1>
+
+    <a href="blogs/blog-page.html" class="post">
+        <div>
+            <h3 class="text">Blog Title</h3>
+            <h4 class="text">Timur Inal</h4>
+            <h4 class="date">01-01-2024</h4>
+
+            <p class="text blog-preview" id="blogpreview-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla in odio ut ante viverra consectetur. Integer pulvinar arcu vitae odio tristique, eget euismod leo vestibulum. Suspendisse potenti. Sed ultricies nunc id eros suscipit, non efficitur orci dictum. Duis ac est urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis ut magna vitae felis suscipit laoreet sit amet eget lacus. Sed eget tortor justo. Sed ullamcorper sapien ac dui tempor, eu pulvinar felis scelerisque. Fusce rutrum hendrerit libero, eget volutpat purus commodo a. Cras non nisi sit amet sapien aliquam rhoncus eget id dui.</p>
+        </div>
+        <hr>
+    </a>
+    <a href="#" class="post">
+        <div>
+            <h3 class="text">Blog Title 2</h3>
+            <h4 class="text">Timur Inal</h4>
+            <h4 class="date">05-03-2024</h4>
+
+            <p class="text blog-preview" id="blogpreview-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat ligula eu elit vestibulum, vel tempus tortor cursus. Nullam euismod ante nec felis convallis, nec tristique orci posuere. Integer eget tortor quis metus scelerisque bibendum. Fusce mollis justo at felis tempus convallis. Nam sed ligula ac leo tincidunt tempus sit amet ut odio. Morbi sit amet velit vel felis volutpat vehicula nec in dolor. Phasellus aliquet, mi a varius lobortis, sapien diam vulputate nulla, a dignissim mi justo vitae ex. Cras sit amet orci at ex fermentum efficitur.</p>
+        </div>
+        <hr>
+    </a>
+
+    <script>
+        const elipsis = "...";
+
+        function limitTextByWords(elementId, maxWords) {
+            var paragraph = document.getElementById(elementId);
+            var text = paragraph.textContent.trim().split(" ");
+            if (text.length > maxWords) {
+                paragraph.textContent = text.slice(0, maxWords).join(" ") + elipsis;
+            }
+        }
+
+        // Call the function with the ID of the paragraph element and the desired word limit
+        limitTextByWords("blogpreview-1", 75);
+        limitTextByWords("blogpreview-2", 75);
+    </script>
+</body>
+</html>

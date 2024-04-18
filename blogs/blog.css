@@ -1,0 +1,48 @@
+.justified {
+    width: 50%;             /* Set the width of the text block */
+    margin: 0 auto;         /* Centre the block horizontally */
+    text-align: justify;    /* Justify the text inside the block */
+    padding: 20px;
+}
+
+p {
+    white-space: pre-wrap;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center; /* Center the main content */
+    align-items: center; /* Aligns children vertically in the center */
+    position: relative; /* Needed for absolute positioning of children */
+    height: 50px; /* You can adjust this based on your content */
+}
+
+.centre-element {
+    text-align: center; /* Centres the text within the element */
+}
+
+.left-element {
+    position: absolute;
+    left: 25px; /* Adjust this value to set the right padding */
+    top: 0; /* Aligns top edge with the container */
+    bottom: 0; /* Aligns bottom edge with the container */
+    display: flex;
+    align-items: center; /* Vertically centers text within the element */
+    white-space: nowrap; /* Ensures the content stays in a single line */
+    text-align: left; /* Aligns the text to the right within the element */
+
+    transition: 0.2s;
+}
+
+.container a:hover {
+    color: #ccc;
+}
+
+.centre {
+    text-align: center;
+}
