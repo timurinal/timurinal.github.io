@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: "JetBrains Mono", sans-serif;
+    color: white;
+    background-color: #444;
+}
+
+.navbar ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar li {
+    border-right: 1px solid #bbb;
+}
+
+.navbar li:last-child {
+    border-right: none;
+}
+
+.navbar li .left {
+    float: left;
+}
+
+.navbar li .right {
+    float: right;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    -webkit-user-select: none;   /* Chrome, Opera, & Safari */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, */
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:not(.active):hover {
+    background-color: #111;
+}
+
+.navbar .active {
+    background-color: #04AA6D;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Set the width of each grid item */
+    grid-gap: 20px; /* Space between grid items */
+    max-width: 660px; /* Max container width (200px * 3 + 2 * 20px grid gap) */
+    padding: 20px; /* Padding around the grid */
+    margin: 0 auto; /* Centre the grid horizontally */
+}
+
+.project-grid .project {
+    display: flex; /* Make the .project a flex container */
+    justify-content: center; /* Horizontally center the flex items */
+    align-items: center; /* Vertically center the flex items */
+    width: 200px; /* Width of each grid item */
+    height: 200px; /* Height of each grid item */
+    background-color: #555; /* Background colour of grid items */
+    box-sizing: border-box; /* Include padding and border in the width and height */
+
+    color: white;
+
+    -webkit-user-select: none;   /* Chrome, Opera, & Safari */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, */
+
+    text-decoration: none;
+    outline: none;
+
+    transition: 0.5s;
+}
+
+.project-grid .project p {
+    margin: 0;
+}
+.project-grid .project:hover {
+    background-color: #888;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
