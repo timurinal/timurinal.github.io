@@ -24,6 +24,8 @@ p {
 
 .centre-element {
     text-align: center; /* Centres the text within the element */
+    padding-top: 65px;
+    padding-bottom: 15px;
 }
 
 .left-element {
@@ -48,8 +50,21 @@ p {
 }
 
 .title {
-    font-size: 24px;
+    font-size: 38px;
+    margin-bottom: 10px;
 }
+
+.author {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.date {
+    font-size: 16px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}
+
 
 @media screen and (max-width: 1250px) {
     .justified {
@@ -59,8 +74,25 @@ p {
         padding: 20px;
     }
 
+    .centre-element {
+        padding-top: 20px;
+    }
+
     .title {
-        font-size: 58px;
-        color: #f00;
+        margin-bottom: 5px;
+        padding-top: 20px;
+    }
+
+    .author, .date {
+
+        margin-bottom: 5px;
+    }
+
+    hr {
+        margin-top: 20px;
+    }
+
+    .left-element {
+        display: none;
     }
 }
