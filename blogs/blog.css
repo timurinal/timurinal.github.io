@@ -47,7 +47,7 @@ p {
     text-align: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
     .justified {
         width: 95%;             /* Set the width of the text block */
         margin: 0 auto;         /* Centre the block horizontally */
