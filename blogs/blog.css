@@ -62,4 +62,13 @@ p {
     .title {
         font-size: 42px;
     }
+    .title1 {
+        font-size: 48px;
+    }
+    .title2 {
+        font-size: 52px;
+    }
+    .title3 {
+        font-size: 56px;
+    }
 }
