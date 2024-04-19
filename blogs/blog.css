@@ -46,3 +46,12 @@ p {
 .centre {
     text-align: center;
 }
+
+@media screen and (max-width: 750px) {
+    .justified {
+        width: 95%;             /* Set the width of the text block */
+        margin: 0 auto;         /* Centre the block horizontally */
+        text-align: justify;    /* Justify the text inside the block */
+        padding: 20px;
+    }
+}
