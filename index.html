@@ -3,6 +3,13 @@
 <head>
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <script>
+    // Redirect index.html connections to the main domain
+    if (window.location.pathname === "/index.html")
+      window.location.href ='https://timurinal.co.uk'
+  </script>
+
   <title>Home</title>
 </head>
 
@@ -17,7 +24,7 @@
     </ul>
   </div>
   <div style="padding:16px"></div><br><br>
-  <p>This is a test.</p>
+  <p>This is a test</p>
   <hr>
 </body>
 </html>

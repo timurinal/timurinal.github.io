@@ -3,3 +3,16 @@
     justify-content: center;
     align-items: center;
 }
+
+.centre-text {
+    text-align: center;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
