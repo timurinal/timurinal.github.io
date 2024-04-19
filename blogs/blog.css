@@ -47,11 +47,19 @@ p {
     text-align: center;
 }
 
+.title {
+    font-size: 24px;
+}
+
 @media screen and (max-width: 1250px) {
     .justified {
         width: 95%;             /* Set the width of the text block */
         margin: 0 auto;         /* Centre the block horizontally */
         text-align: justify;    /* Justify the text inside the block */
         padding: 20px;
+    }
+
+    .title {
+        font-size: 42px;
     }
 }
