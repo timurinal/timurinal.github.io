@@ -90,6 +90,7 @@ body {
 
 .project-grid .project p {
     margin: 0;
+    text-align: center;
 }
 .project-grid .project:hover {
     background-color: #888;
