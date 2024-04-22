@@ -9,7 +9,7 @@
 }
 
 .mobile .navbar {
-    position: fixed;
+    position: static;
     top: 0;
     width: 100%;
     text-align: center;
