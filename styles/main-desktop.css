@@ -10,51 +10,91 @@ body {
     margin: 0;
 }
 
-.desktop .navbar ul {
+.desktop p {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.desktop .navbar {
     position: fixed;
     top: 0;
     width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(119, 119, 119, 0.6);
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.desktop .navbar ul {
+    display: flex; /* Center the ul inside the navbar */
+    flex-direction: row;
+    justify-content: flex-end;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+    padding-right: 5px;
+    margin: 0; /* Remove default margin */
+    background-color: transparent; /* Transparent background for the ul */
 }
 
 .desktop .navbar li {
+    display: inline-block; /* Make the list items display inline */
     border-right: 1px solid #bbb;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .desktop .navbar li:last-child {
     border-right: none;
 }
 
-.desktop .navbar li .left {
-    float: left;
-}
-
-.desktop .navbar li .right {
-    float: right;
-}
-
+/* Style adjustments for the navbar links to look like buttons */
 .desktop .navbar li a {
-    display: block;
+    padding: 10px 20px; /* Adjust padding to make the links look like buttons */
+    border-radius: 5px; /* Rounded corners for the links */
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-
-    -webkit-user-select: none;   /* Chrome, Opera, & Safari */
-    -moz-user-select: none;      /* Firefox */
-    -ms-user-select: none;       /* Internet Explorer/Edge */
-    user-select: none;           /* Non-prefixed version, */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
-/* Change the link color to #111 (black) on hover */
 .desktop .navbar li a:not(.active):hover {
-    background-color: #111;
+    background-color: #111; /* Darker background on hover */
+    border-radius: 5px; /* Maintain rounded corners on hover */
 }
 
+/* Set the active link to be distinctive */
 .desktop .navbar .active {
-    background-color: #04AA6D;
+    background-color: #04AA6D; /* Active link background */
+    border-radius: 5px; /* Rounded corners for the active link */
 }
+
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/home/1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-intro-text {
+    background-color: rgba(119, 119, 119, 0.6);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(10px);
+}
+
+.home-intro-text h1 {
+    margin-bottom: 0;
+}
+.home-intro-text h2 {
+    margin-top: 0;
+}
+
