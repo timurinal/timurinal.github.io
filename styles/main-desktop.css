@@ -16,25 +16,42 @@ body {
 }
 
 .desktop .navbar {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Space between title and navigation links */
+    align-items: center; /* Align items vertically */
     position: fixed;
     top: 0;
     width: 100%;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     background-color: rgba(119, 119, 119, 0.6);
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.desktop .title {
+    margin: 0; /* Removes default margin */
+    padding-left: 5%;
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.desktop .title a {
+    color: white;
+
+    -webkit-user-select: none;   /* Chrome, Opera, & Safari */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, */
+
+    text-decoration: none;
 }
 
 .desktop .navbar ul {
-    display: flex; /* Center the ul inside the navbar */
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
     list-style-type: none;
-    padding-right: 5px;
-    margin: 0; /* Remove default margin */
-    background-color: transparent; /* Transparent background for the ul */
+    margin: 0; /* Ensure the list has no default margin */
+    padding-right: 5%;
 }
 
 .desktop .navbar li {
@@ -56,6 +73,11 @@ body {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s; /* Smooth transition for hover effect */
+
+    -webkit-user-select: none;   /* Chrome, Opera, & Safari */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, */
 }
 
 .desktop .navbar li a:not(.active):hover {
@@ -96,5 +118,75 @@ body {
 }
 .home-intro-text h2 {
     margin-top: 0;
+}
+
+/*  Consider small screen sizes (or window sizes) as a mobile   */
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        color: #f00 !important;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: rgba(119, 119, 119, 0.6);
+        backdrop-filter: blur(10px); /* Blur effect */
+        -webkit-backdrop-filter: blur(10px); /* For Safari */
+    }
+
+    .navbar ul {
+        text-align: center;
+        list-style-type: none;
+        padding-right: 5px;
+        margin: 0; /* Remove default margin */
+        background-color: transparent; /* Transparent background for the ul */
+    }
+
+    .navbar li {
+        display: block; /* Make the list items display inline */
+        border-right: 1px solid #bbb;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 5%;
+    }
+
+    .navbar li:last-child {
+        border-right: none;
+    }
+
+    /* Style adjustments for the navbar links to look like buttons */
+    .navbar li a {
+        padding: 10px 20px; /* Adjust padding to make the links look like buttons */
+        border-radius: 5px; /* Rounded corners for the links */
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .navbar li a:not(.active):hover {
+        background-color: #111; /* Darker background on hover */
+        border-radius: 5px; /* Maintain rounded corners on hover */
+    }
+
+    /* Set the active link to be distinctive */
+    .navbar .active {
+        background-color: #04AA6D; /* Active link background */
+        border-radius: 5px; /* Rounded corners for the active link */
+    }
+
+    .home-intro {
+        background-image: none !important;
+        background-color: #444;
+    }
+
+    .home-intro-text {
+        background-color: transparent;
+    }
 }
 

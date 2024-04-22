@@ -4,7 +4,9 @@
     font-size: 3rem;
 }
 
-
+.mobile .title {
+    display: none;
+}
 
 .mobile .navbar {
     position: fixed;
