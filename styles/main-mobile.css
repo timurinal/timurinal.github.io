@@ -1,15 +1,69 @@
-.mobile .navbar {
-    display: none;
+.mobile {
+    margin: 0;
+
+    font-size: 3rem;
 }
 
+
+
 .mobile .navbar {
-    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(119, 119, 119, 0.6);
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.mobile .navbar ul {
+    text-align: center;
+    list-style-type: none;
+    padding-right: 5px;
+    margin: 0; /* Remove default margin */
+    background-color: transparent; /* Transparent background for the ul */
+}
+
+.mobile .navbar li {
+    display: block; /* Make the list items display inline */
+    border-right: 1px solid #bbb;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 5%;
+}
+
+.mobile .navbar li:last-child {
+    border-right: none;
+}
+
+/* Style adjustments for the navbar links to look like buttons */
+.mobile .navbar li a {
+    padding: 10px 20px; /* Adjust padding to make the links look like buttons */
+    border-radius: 5px; /* Rounded corners for the links */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.mobile .navbar li a:not(.active):hover {
+    background-color: #111; /* Darker background on hover */
+    border-radius: 5px; /* Maintain rounded corners on hover */
+}
+
+/* Set the active link to be distinctive */
+.mobile .navbar .active {
+    background-color: #04AA6D; /* Active link background */
+    border-radius: 5px; /* Rounded corners for the active link */
 }
 
 .mobile .home-intro {
-
+    background-image: none;
+    background-color: #444;
 }
 
 .mobile .home-intro-text {
-
+    background-color: transparent;
 }
