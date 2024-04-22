@@ -18,19 +18,23 @@ document.addEventListener("DOMContentLoaded", function() {
     //document.body.classList.add('desktop')
 
     // Select random background image only if the current site is on a desktop
-    if (document.body.classList.contains('desktop')) {
-        const backgrounds = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png'];
+    // Find a better way of checking the current page
+    // Maybe (if its possible) check file name
+    if (document.title === "Timur Inal | Game & Graphics Programmer") {
+        if (document.body.classList.contains('desktop')) {
+            const backgrounds = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png'];
 
-        // Path to the images directory
-        const path = 'img/home/';
+            // Path to the images directory
+            const path = 'img/home/';
 
-        // Select a random background image
-        const randomImage = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+            // Select a random background image
+            const randomImage = backgrounds[Math.floor(Math.random() * backgrounds.length)];
 
-        // Get the .home-intro element
-        const homeIntro = document.querySelector('.home-intro');
+            // Get the .home-intro element
+            const homeIntro = document.querySelector('.home-intro');
 
-        // Set the random background image
-        homeIntro.style.backgroundImage = `url('${path}${randomImage}')`;
+            // Set the random background image
+            homeIntro.style.backgroundImage = `url('${path}${randomImage}')`;
+        }
     }
 });

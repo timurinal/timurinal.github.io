@@ -3,7 +3,6 @@
 body {
     font-family: 'JetBrains Mono', monospace;
     color: white;
-    background-color: #444;
 }
 
 .desktop {
@@ -28,13 +27,13 @@ body {
     -webkit-backdrop-filter: blur(10px);
 }
 
-.desktop .title {
+.desktop .navbar-title {
     margin: 0; /* Removes default margin */
     padding-left: 5%;
     font-size: 24px; /* Adjust font size as needed */
 }
 
-.desktop .title a {
+.desktop .navbar-title a {
     color: white;
 
     -webkit-user-select: none;   /* Chrome, Opera, & Safari */
@@ -118,6 +117,68 @@ body {
 }
 .home-intro-text h2 {
     margin-top: 0;
+}
+
+.text-centre {
+    text-align: center;
+}
+
+.desktop .title {
+    padding-top: 5%;
+}
+
+.desktop .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Set the width of each grid item */
+    grid-gap: 20px; /* Space between grid items */
+    max-width: 660px; /* Max container width (200px * 3 + 2 * 20px grid gap) */
+    padding: 20px; /* Padding around the grid */
+    margin: 0 auto; /* Centre the grid horizontally */
+}
+
+.desktop .project-grid .project {
+    display: flex; /* Make the .project a flex container */
+    justify-content: center; /* Horizontally center the flex items */
+    align-items: center; /* Vertically center the flex items */
+    width: 200px; /* Width of each grid item */
+    height: 200px; /* Height of each grid item */
+    background-color: #555; /* Background colour of grid items */
+    box-sizing: border-box; /* Include padding and border in the width and height */
+
+    color: white;
+
+    -webkit-user-select: none;   /* Chrome, Opera, & Safari */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, */
+
+    text-decoration: none;
+    outline: none;
+
+    transition: 0.5s ease;
+}
+
+.desktop .project-grid .project:hover {
+    background-color: #777;
+}
+
+.desktop .project-grid .project p {
+    margin: 0;
+    text-align: center;
+}
+
+#project1 {
+    background-image: url('../img/placeholder512x512.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent !important;
+}
+
+.desktop .project-grid #project1:hover {
+
+    background-color: transparent !important;
+    background-size: 200%;
 }
 
 /*  Consider small screen sizes (or window sizes) as a mobile   */
