@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    background-color: #444;
+}
+
+.desktop {
+    margin: 0;
+}
+
+.desktop .navbar ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.desktop .navbar li {
+    border-right: 1px solid #bbb;
+}
+
+.desktop .navbar li:last-child {
+    border-right: none;
+}
+
+.desktop .navbar li .left {
+    float: left;
+}
+
+.desktop .navbar li .right {
+    float: right;
+}
+
+.desktop .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    -webkit-user-select: none;   /* Chrome, Opera, & Safari */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, */
+}
+
+/* Change the link color to #111 (black) on hover */
+.desktop .navbar li a:not(.active):hover {
+    background-color: #111;
+}
+
+.desktop .navbar .active {
+    background-color: #04AA6D;
+}
