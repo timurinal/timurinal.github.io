@@ -1,0 +1,11 @@
+.planned {
+    color: red !important;
+}
+
+.in-dev {
+    color: goldenrod !important;
+}
+
+.completed {
+    color: lawngreen !important;
+}
