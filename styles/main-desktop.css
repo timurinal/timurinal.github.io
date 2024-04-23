@@ -182,6 +182,24 @@ body {
     background-size: 200%;
 }
 
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.not-found-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.not-found-text h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 /*  Consider small screen sizes (or window sizes) as a mobile   */
 @media screen and (max-width: 600px) {
     body {

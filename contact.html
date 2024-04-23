@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/main-desktop.css">
+  <link rel="stylesheet" type="text/css" href="styles/contact.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <script type="text/javascript" src="scripts/contact.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
+  <title>Contact</title>
+
+</head>
+
+<body>
+  <div class="navbar">
+    <h2 class="navbar-title"><a href="../">Timur Inal</a></h2>
+    <ul>
+      <li><a href="./">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <div style="padding:16px"><br><br><br></div>
+
+  <h1>Contact</h1>
+  <h3>Send me a message!<br>I'll try to respond as soon as possible</h3><br>
+
+  <form action="https://formspree.io/f/xrgnreav" method="post" class="contact-centre">
+    <ul>
+      <li>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" />
+      </li>
+      <li>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" />
+      </li>
+      <li>
+        <label for="msg">Message:</label>
+        <textarea id="msg" name="user_message" style="resize: none;"></textarea>
+      </li>
+      <li>
+        <button type="submit">Submit</button>
+      </li>
+    </ul>
+  </form>
+</body>
+<footer>
+  <p class="text-centre">&copy; 2024 Timur Inal. All rights reserved.</p>
+</footer>
+</html>
