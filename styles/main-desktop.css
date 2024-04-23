@@ -156,7 +156,7 @@ body {
     text-decoration: none;
     outline: none;
 
-    transition: 0.5s ease;
+    transition: 0.2s ease;
 }
 
 .desktop .project-grid .project:hover {
@@ -169,17 +169,11 @@ body {
 }
 
 #project1 {
-    background-image: url('../img/placeholder512x512.png');
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: transparent !important;
+    background-color: rgb(73, 53, 142);
 }
 
 .desktop .project-grid #project1:hover {
-
-    background-color: transparent !important;
-    background-size: 200%;
+    background-color: rgb(109, 93, 164);
 }
 
 .link {
