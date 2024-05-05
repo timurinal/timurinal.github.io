@@ -4,18 +4,20 @@ body {
     font-family: 'JetBrains Mono', monospace;
     color: white;
     background-color: #444;
-}
-
-.desktop {
     margin: 0;
 }
 
-.desktop p {
+footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+p {
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.desktop .navbar {
+.navbar {
     display: flex; /* Enables flexbox layout */
     justify-content: space-between; /* Space between title and navigation links */
     align-items: center; /* Align items vertically */
@@ -28,13 +30,13 @@ body {
     -webkit-backdrop-filter: blur(10px);
 }
 
-.desktop .navbar-title {
+.navbar-title {
     margin: 0; /* Removes default margin */
     padding-left: 5%;
     font-size: 24px; /* Adjust font size as needed */
 }
 
-.desktop .navbar-title a {
+.navbar-title a {
     color: white;
 
     -webkit-user-select: none;   /* Chrome, Opera, & Safari */
@@ -45,7 +47,7 @@ body {
     text-decoration: none;
 }
 
-.desktop .navbar ul {
+.navbar ul {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -168,13 +170,26 @@ body {
     text-align: center;
 }
 
-#project1 {
-    background-color: rgb(73, 53, 142);
-}
+/*#project1 {*/
+/*    background-color: rgb(73, 53, 142);*/
+/*}*/
 
-.desktop .project-grid #project1:hover {
-    background-color: rgb(109, 93, 164);
-}
+/*#project1:hover {*/
+/*    background-color: rgb(109, 93, 164);*/
+/*}*/
+
+/*#project2 {*/
+/*    background-color: transparent;*/
+/*    background-image: url("projects/img/path-tracer/sphere-in-box.png");*/
+/*    background-size: 100%;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+/*#project2:hover {*/
+/*    background-color: rgb(109, 93, 164);*/
+/*    background-size: 200%;*/
+/*}*/
 
 .link {
     color: inherit;

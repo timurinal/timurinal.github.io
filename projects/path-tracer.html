@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Path Tracer</title>
     <link rel="icon" type="image/png" href="../img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="../styles/main-desktop.css">
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
     <link rel="stylesheet" type="text/css" href="../styles/main-mobile.css">
     <link rel="stylesheet" type="text/css" href="project-page.css">
     <script src="../scripts/index.js"></script>
@@ -35,7 +35,7 @@
     <!-- TODO: create a little utility script that can autogenerate html files for a project page. It will take in normal formatted text and replace \n escape sequences with <br> tags to allow for the browser to render them -->
     <div class="main">
         <p>
-            Recently, <!-- TODO: Add a date to these pages--> I've been learning shaders in Unity and I made a <a href="#" style="color: white;">realtime atmospheric scattering simulation</a> and that used ray marching to simulate all the little light interactions. With this new knowledge of shaders and ray marching, I wanted to attempt to make my own path tracer in Unity! I've actually made a ray tracer before, following <a style="color: white;" href="https://www.gamedeveloper.com/programming/gpu-ray-tracing-in-unity-part-1" target="_blank">this</a> guide. It was great for learning about ray tracers, and it was very fast, but it didn't produce the best results. Shadows were very harsh, reflections looked 'off', and biggest of all, there wasn't support for triangles. This new path tracer I made is much better and has many new features like:
+            Recently, <!-- TODO: Add a date to these pages--> I've been learning shaders in Unity and I made a <a href="/atmosphere" style="color: white;">realtime atmospheric scattering simulation</a> and that used ray marching to simulate all the little light interactions. With this new knowledge of shaders and ray marching, I wanted to attempt to make my own path tracer in Unity! I've actually made a ray tracer before, following <a style="color: white;" href="https://www.gamedeveloper.com/programming/gpu-ray-tracing-in-unity-part-1" target="_blank">this</a> guide. It was great for learning about ray tracers, and it was very fast, but it didn't produce the best results. Shadows were very harsh, reflections looked 'off', and biggest of all, there wasn't support for triangles. This new path tracer I made is much better and has many new features like:
         </p>
         <ul>
             <li>Multiple lights</li>
@@ -74,7 +74,7 @@
         <div class="responsive">
             <div class="gallery">
                 <a href="img/path-tracer/strange-bug.png" target="_blank"><img src="img/path-tracer/strange-bug.png" alt="TODO" width="960" height="540"></a>
-                <div class="desc">This was a strange bug I had when my random function generated too uniform values so light was 'randomly' bouncing in the same direction every time</div>
+                <div class="desc">This was a strange bug I had when my random function generated values too uniformly so light was 'randomly' bouncing in the same direction every time</div>
             </div>
         </div>
     </div>
