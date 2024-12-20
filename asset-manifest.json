@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/timurinal.github.io/static/css/main.7efde049.css",
-    "main.js": "/timurinal.github.io/static/js/main.b84ff2e1.js",
+    "main.js": "/timurinal.github.io/static/js/main.a9d1f9e5.js",
     "static/js/488.ebe48671.chunk.js": "/timurinal.github.io/static/js/488.ebe48671.chunk.js",
     "index.html": "/timurinal.github.io/index.html",
     "main.7efde049.css.map": "/timurinal.github.io/static/css/main.7efde049.css.map",
-    "main.b84ff2e1.js.map": "/timurinal.github.io/static/js/main.b84ff2e1.js.map",
+    "main.a9d1f9e5.js.map": "/timurinal.github.io/static/js/main.a9d1f9e5.js.map",
     "488.ebe48671.chunk.js.map": "/timurinal.github.io/static/js/488.ebe48671.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7efde049.css",
-    "static/js/main.b84ff2e1.js"
+    "static/js/main.a9d1f9e5.js"
   ]
 }
