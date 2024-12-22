@@ -2,7 +2,7 @@
   "name": "portfolio-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://timurinal.github.io/timurinal.github.io",
+  "homepage": "https://timurinal.co.uk",
   "dependencies": {
     "@types/node": "^22.10.2",
     "@types/react": "^19.0.1",
