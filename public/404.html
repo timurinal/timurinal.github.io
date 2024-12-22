@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; URL=/" />
+  <script>
+    // Redirect to the root path and let React Router handle it
+    var pathname = window.location.pathname;
+    var query = window.location.search || "";
+    window.location.replace("/" + pathname + query);
+  </script>
+</head>
+<body></body>
+</html>
