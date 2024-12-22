@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; URL=/" />
-  <script>
-    // Redirect to the root path and let React Router handle it
-    var pathname = window.location.pathname;
-    var query = window.location.search || "";
-    window.location.replace("/" + pathname + query);
-  </script>
+  <meta charset="UTF-8" />
+  <title>Redirecting...</title>
 </head>
-<body></body>
+<body>
+<p>Redirecting...</p>
+<script>
+  // Script to redirect to index.html while preserving the path
+  // 1. Grab the current path
+  var redirectUrl = window.location.protocol + '//' + window.location.host + '/?' +
+    'redirect=' + encodeURIComponent(window.location.pathname);
+
+  // 2. Redirect to home with a query param so React can parse it if needed
+  window.location.replace(redirectUrl);
+</script>
+</body>
 </html>
