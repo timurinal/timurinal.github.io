@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0; URL='/'" />
+  <script>
+    // Preserve the path and redirect to the entry point of your app
+    var pathname = window.location.pathname;
+    var query = window.location.search;
+    var destination = "/" + "#!" + pathname + query;
+    window.location.replace(destination);
+  </script>
+</head>
+</html>
