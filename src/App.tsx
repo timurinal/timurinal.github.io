@@ -9,6 +9,10 @@ import Projects from './pages/Projects';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 
+import PathTracing from './pages/projects/PathTracing';
+
+import './App.css';
+
 function App() {
   const navigate = useNavigate();
 
@@ -37,6 +41,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/projects/path-tracing" element={<PathTracing />} />
       </Routes>
     </>
   );

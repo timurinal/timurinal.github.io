@@ -1,0 +1,17 @@
+.project-page {
+  margin-left: 2%;
+  margin-right: 2%;
+  padding-top: 1%;
+}
+
+.project-page .not-started {
+  color: red;
+}
+
+.project-page .in-progress {
+  color: orange;
+}
+
+.project-page .completed {
+  color: lawngreen;
+}

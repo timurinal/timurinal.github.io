@@ -1,0 +1,23 @@
+.project {
+}
+
+.project .content {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.project .not-started {
+  color: red;
+}
+
+.project .in-progress {
+  color: orange;
+}
+
+.project .completed {
+  color: lawngreen;
+}
+
+.project .fullwidth-button {
+  width: 100%;
+}

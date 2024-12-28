@@ -1,0 +1,7 @@
+* {
+  background-color: var(--bs-body-color-rgb);
+}
+
+p {
+  text-align: justify;
+}
