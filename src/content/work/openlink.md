@@ -11,8 +11,6 @@ tags:
   - C++
 ---
 
-## OpenLink
-
 An issue I have always had with technology is having the ability to connect multiple devices seamlessly, but **only** if they are of the same brand or of "compatible" operating systems. For example, I have a Samsung Phone, Windows laptop, and a PC running Arch Linux. There is no simple way for me to connect all of these devices together to get things like file sharing, shared notifications, or even more advanced features like screen mirroring. There are apps like KDE Connect which are great, but I've never been able to get it to work with my setup, as I don't use KDE Plasma, so none of the dependencies are there that are needed.
 
 This is where OpenLink comes in, my newest and most ambitious project yet. It is a cross-platform "engine" for creating custom device ecosystems, allowing you to connect any device to any other device that you own. I am designing it to "just work", with no need to set up any additional packages or dependencies.

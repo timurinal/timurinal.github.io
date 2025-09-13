@@ -1,7 +1,7 @@
 ---
 title: Path Tracing
 publishDate: 2024-04-27 14:43:22
-img: /assets/projects/path-tracing-1.png
+img: /assets/work/path-tracing-1.png
 img_alt: An image of a rendered atmosphere surrounding an Earth-like planet visible from the surface of a moon.
 description: |
   A path tracer written in C# and HLSL
