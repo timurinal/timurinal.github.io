@@ -1,13 +1,13 @@
 ---
 interface Props {
-	variant?: 'offset' | 'small' | 'large';
+    variant?: 'offset' | 'small' | 'medium' | 'large';
 }
 
 const { variant } = Astro.props;
 ---
 
-<ul class:list={['grid', { offset: variant === 'offset', small: variant === 'small', large: variant === 'large' }]}>
-	<slot />
+<ul class:list={['grid', { offset: variant === 'offset', small: variant === 'small', medium: variant === 'medium', large: variant === 'large' }]}>
+    <slot />
 </ul>
 
 <style>
@@ -26,6 +26,16 @@ const { variant } = Astro.props;
 
     /* If last row contains only one item, make it span both columns. */
     .grid.small > :global(:last-child:nth-child(odd)) {
+        grid-column: 1 / 3;
+    }
+
+    .grid.medium {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    /* If last row contains only one item, make it span both columns. */
+    .grid.medium > :global(:last-child:nth-child(odd)) {
         grid-column: 1 / 3;
     }
 
@@ -78,6 +88,17 @@ const { variant } = Astro.props;
 
         .grid.small > :global(*) {
             flex-basis: 20rem;
+        }
+
+        .grid.medium {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        .grid.medium > :global(*) {
+            flex-basis: 26rem;
         }
 
         /* Large variant (desktop) */

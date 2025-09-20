@@ -18,7 +18,6 @@ For certain events they live-streamed, a countdown timer that could be controlle
 
 **Project Objectives:**
 
-
 - Something clean and simple that could be customised with branding, specific colours, etc
 - The ability to add the event name to the UI that updated in realtime
 - Colour changing timer that turns green at more than 5 minutes, orange at less than 5 minutes, and red at less than 60 seconds
@@ -28,8 +27,6 @@ For certain events they live-streamed, a countdown timer that could be controlle
 
 
 **Some challenges I faced while making the app were:**
-
-
 
 - Unity's provided networking API (Netcode for GameObjects) made it very difficult to send non-fixed size data types like strings as you have to use fixed size, C# builtin, data types like bools, integers, floats, etc
 - I was able to find a better networking system called [Mirror Networking](https://mirror-networking.com/) that was far easier to use than Netcode and allowed sending of any data type including custom classes and structs
