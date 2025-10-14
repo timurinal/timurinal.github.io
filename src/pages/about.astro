@@ -11,34 +11,40 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				title="About"
 				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
 			>
-				<img
+				<!--<img
 					width="1533"
 					height="873"
 					src="/assets/at-work.jpg"
 					alt="Jeanine White at work with a colleague"
-				/>
+				/>-->
 			</Hero>
 
 			<section>
 				<h2 class="section-title">Background</h2>
 				<div class="content">
                     <p>
-                        Hi, I'm Timur, a 15 year old student wanting to get into game engine programming.
+                        Hi, I'm Timur, a 15-year-old student wanting to get into game engine programming.
                     </p>
                     <p>
-                        I've had a love of programming from an early age, starting with learning how to make mods for Minecraft at 6 years old. That then progressed into me wanting to learn how to actually make games, with me learning Unity and C# starting at 8 or 9. I then taught myself C# using YouTube videos. Simultaneously, I also learnt Python and some HTML/JS along the side, but C# was my strongest.
+                        I've had a love of programming from an early age, starting with learning how to make mods for Minecraft at 6 years old. That then progressed into me wanting to learn how to actually make games, with me learning Unity and C# starting at 8 or 9. I then taught myself C# using YouTube videos. Simultaneously, I also learnt Python and some HTML/JS alongside, but C# was my strongest language.
                     </p>
                     <p>
-                        Until I was about 14 years old, I had always used Unity (as well as trying Unreal Engine, CRYENGINE, and Godot), but I then decided I wanted to start learning OpenGL to eventually make my own engine. I initially started by using OpenTK in C#, and I made one of many Minecraft clones (as of writing this in September of 2025, I have made a total of 4 Minecraft clones) which had procedural generation, but no voxel interactions. I didn't use OpenTK for very long before deciding I wanted to learn OpenGL from complete scratch. I also used that chance to learn C, which I did over a weekend using <a href="https://learnopengl.com">LearnOpenGL</a> in which my second Minecraft clone. This attempt was merely a single chunk being generated, with no voxel interactions or procedural generation, but it gave me a very strong foundation for how OpenGL worked.
+                        I had also made a lot of random Unity projects, all unfinished, but they all helped develop my skills. Some of the things I made were my <a href="/work/atmosphere">real-time atmosphere</a>, two iterations of a path tracer, a GPU accelerated planet generator, and a couple of multiplayer games that got pretty far with server authoritative movement and a fully networked weapons system. Additionally, <a href="/work/timer-app">I made a project for a live streaming company</a> that provided a remotely controllable timer for speakers.
                     </p>
                     <p>
-                        After having completed that project, I wanted to improve my clone, but I was being limited by the lack of a standard library of C, despite implementing my own dynamic vector object. It was at this point I wanted to learn C++, which has now become my strongest - and most liked - language. I adapted to C++ very quickly, as it had almost no memory management through the extensive standard library, so it felt a lot more like C#. In this attempt, I progressed much further and implemented translucency and sorting of transparent faces, a more advanced block loader, and finally the ability to interact with the world through placing and breaking blocks!
+                        Until I was about 14 years old, I had always used Unity (as well as trying Unreal Engine, CRYENGINE, and Godot), but I then decided I wanted to start learning OpenGL to eventually make my own engine. I initially started by using OpenTK in C#, and I made one of many Minecraft clones (as of writing this in September 2025, I have made a total of 4 Minecraft clones) which had procedural generation but no voxel interactions. I didn't use OpenTK for very long before deciding I wanted to learn OpenGL from complete scratch. I also used that chance to learn C, which I did over a weekend using <a href="https://learnopengl.com">LearnOpenGL</a> in which I made my second Minecraft clone. This attempt was merely a single chunk being generated, with no voxel interactions or procedural generation, but it gave me a very strong foundation for how OpenGL worked.
                     </p>
                     <p>
-                        I used that voxel game in C++ as a chance to really get to grips with C++. That allowed me to make my <a href="/work/game-engine">first game engine</a>, which - despite me getting burnt out with = actually started to look like a passable game engine, featuring a full dynamic ECS, hierarchy, parent-child architecture, and UI via Dear ImGui. Whilst I haven't continued with that project, I have been wanting to start a new version in which I will keep the codebase much cleaner and more modular. Unlike with my previous game engine, this one will prioritise voxel games, with a builtin ray tracer or greedy mesher for rendering voxels. It's an ambitious goal, but I'll get some useful experience - just like my previous game engine - whilst I work on it.
+                        After having completed that project, I wanted to improve my clone, but I was being limited by the lack of a standard C library, despite implementing my own dynamic vector object. It was at this point I wanted to learn C++, which has now become my strongest - and most liked - language. I adapted to C++ very quickly, as it had almost no need for manual memory management through the extensive standard library, so it felt a lot more like C#. In this attempt, I progressed much further and implemented translucency and sorting of transparent faces, a more advanced block loader, and finally the ability to interact with the world through placing and breaking blocks!
                     </p>
                     <p>
-                        It was around this time that I had been preparing for my Computer Science GCSE, which due to me being home educated, I could sit 2 years early.
+                        I used that voxel game in C++ as a chance to really get to grips with C++. That allowed me to make my <a href="/work/game-engine">first game engine</a>, which - despite me getting burnt out on - actually started to look like a passable game engine, featuring a full dynamic ECS, hierarchy, parent-child architecture, and UI via Dear ImGui. Whilst I haven't continued with that project, I have been wanting to start a new version in which I will keep the codebase much cleaner and more modular. Unlike with my previous game engine, this one will prioritise voxel games, with a built-in ray tracer or greedy mesher for rendering voxels. It's an ambitious goal, but I'll get some useful experience - just like my previous game engine &mdash; whilst I work on it.
+                    </p>
+                    <p>
+                        It was around this time that I had been preparing for my Computer Science GCSE, which due to me being home-educated, I could sit two years early. Because of my knowledge with computers, I was already very familiar with the content on the GCSE, so I spent a few months mainly doing past papers to fill in any gaps in my knowledge due to my irregular method of learning. I then went on to get a grade 8 (equivalent to an A*) which I was very happy about getting.
+                    </p>
+                    <p>
+                        Since then I have been doing some more advanced projects, like my current ongoing one where I make a voxel ray tracer (project page coming soon) which features a custom ray traced parallax mapping technique for adding real 3D geometry for a relatively low cost, PBR (fully <a href="https://shaderlabs.org/wiki/LabPBR_Material_Standard">LabPBR</a> compliant - allowing for the use of Minecraft PBR resource packs within the ray tracer), and more.
                     </p>
 				</div>
 			</section>
@@ -58,7 +64,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                         <li>Unity</li>
                         <li>Several IDEs</li>
                         <li>OpenGL</li>
-                        <li>Vulkan</li>
+                        <li>Vulkan (Learning)</li>
                         <li>Python</li>
                         <li>Git</li>
                         <li>GitHub</li>
