@@ -43,6 +43,12 @@ const posts = (await getCollection('post'))
                             Developer
                         </Pill>
                     </div>
+                    <div class="about-btn">
+                        <CallToAction href="/about">
+                            About Me
+                            <Icon icon="arrow-right" size="1.2em"/>
+                        </CallToAction>
+                    </div>
                 </Hero>
 
                 <img
@@ -54,12 +60,6 @@ const posts = (await getCollection('post'))
             </header>
 
             <!-- <Skills/> -->
-            <div class="cta">
-                <CallToAction href="/about">
-                    About Me
-                    <Icon icon="arrow-right" size="1.2em"/>
-                </CallToAction>
-            </div>
         </div>
 
         <main class="wrapper stack gap-20 lg:gap-48">
@@ -289,5 +289,11 @@ const posts = (await getCollection('post'))
             border-radius: 1.5rem;
             height: 9.5rem;
         }
+    }
+
+    .about-btn {
+        display: flex;
+        padding-top: 1rem;
+        flex-direction: column;
     }
 </style>

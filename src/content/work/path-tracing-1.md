@@ -25,7 +25,7 @@ The denoiser that the path tracer uses is a custom denoiser that averages the fr
 
 It isn't the most performant by any means but is able to quickly render (simple) scenes. During testing, I was able to render about 15 FPS (frames per second) with 6 spheres and no triangles, and I was able to get a relatively denoised picture after about 15 minutes, but the initial bulk of the noise disappears after about a minute. With a slightly more complex scene (about 6 quads and 4 spheres), I was able to get a denoised image after about 2 hours.
 
-The source code is available on my [GitHub](https://github.com/timurinal/Path-Tracing/) as a Unity project if you want to check it out, although the code is very messy, given that it was written in a compute shader and not in a fragment shader. My [second attempt](/projects/path-tracing-2) at a path tracer is a massive improvement over this one, so be sure to check that out!
+The source code is available on my [GitHub](https://github.com/timurinal/Path-Tracing/) as a Unity project if you want to check it out, although the code is very messy, given that it was written in a compute shader and not in a fragment shader. My [second attempt](/work/path-tracing-2) at a path tracer is a massive improvement over this one, so be sure to check that out!
 
 ### Images
 
