@@ -19,4 +19,4 @@ A common optimisation done by the GPU driver is to move elements around an index
 
 Once I had a ray collision function, adding more complex lighting like shadows and specular reflection was fairly straightforward.
 
-Since I was using a resource pack from a Minecraft PBR pack, I thought I should try and make my ray tracer LabPBR complient, and added normal mapping using their defined method. I also attempted to add parallax mapping, but I was disappointed with the results, but I am working on a new method using some ray marching to get much better results.
+Since I was using a resource pack from a Minecraft PBR pack, I thought I should try and make my ray tracer LabPBR compliant and added normal mapping using their defined method. I also attempted to add parallax mapping, but I was disappointed with the results, but I am working on a new method using some ray marching to get much better results.
