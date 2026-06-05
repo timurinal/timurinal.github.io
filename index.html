@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timur Inal — Engine &amp; graphics programmer</title>
+  <meta name="description" content="Portfolio of Timur Inal — a 16-year-old engine and graphics programmer building renderers, voxel worlds and game engines from scratch." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+
+  <style>
+    /* boot splash — shown until React mounts */
+    .boot { position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 18px;
+      background: #0c0c0e; color: #6a6a72; font: 13px/1 ui-monospace, "JetBrains Mono", monospace; }
+    .boot-dots { display: flex; gap: 7px; }
+    .boot-dots i { width: 9px; height: 9px; border-radius: 50%; background: currentColor;
+      opacity: .35; animation: bootpulse 1s ease-in-out infinite; }
+    .boot-dots i:nth-child(2) { animation-delay: .15s; }
+    .boot-dots i:nth-child(3) { animation-delay: .3s; }
+    .boot-label { letter-spacing: .08em; }
+    @keyframes bootpulse { 0%, 100% { opacity: .25; } 50% { opacity: .9; } }
+  </style>
+</head>
+<body>
+  <div id="root">
+    <div class="boot">
+      <div class="boot-dots"><i></i><i></i><i></i></div>
+      <span class="boot-label">loading…</span>
+    </div>
+  </div>
+
+  <!-- React (production builds, pinned) -->
+  <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+
+  <!-- Babel — transpiles the JSX sources in the browser, so the .jsx files
+       below ARE the source of truth: edit them and refresh, no build step. -->
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <!-- plain-JS data + helpers -->
+  <script src="scripts/data.js"></script>
+  <script src="scripts/markdown.js"></script>
+  <script src="scripts/content-loader.js"></script>
+
+  <!-- app source (JSX, compiled in-browser by Babel, in dependency order) -->
+  <script type="text/babel" data-presets="react" src="scripts/icons.jsx"></script>
+  <script type="text/babel" data-presets="react" src="scripts/terrain.jsx"></script>
+  <script type="text/babel" data-presets="react" src="scripts/tweaks-panel.jsx"></script>
+  <script type="text/babel" data-presets="react" src="scripts/shell.jsx"></script>
+  <script type="text/babel" data-presets="react" src="scripts/pages-core.jsx"></script>
+  <script type="text/babel" data-presets="react" src="scripts/pages-more.jsx"></script>
+  <script type="text/babel" data-presets="react" src="scripts/app.jsx"></script>
+</body>
+</html>
