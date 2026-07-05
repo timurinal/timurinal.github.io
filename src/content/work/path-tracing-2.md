@@ -1,5 +1,5 @@
 ---
-title: Path Tracing (again)
+title: Path Tracing v2
 publishDate: 2025-01-18 16:21:20
 img: /assets/projects/path-tracer-2/project-2.png
 img_alt: An image of two spheres with a sun in the distance.
